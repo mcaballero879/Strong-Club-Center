@@ -1,0 +1,12 @@
+.section-title-block--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-title-block--center .section-description {
+  margin-inline: auto;
+}
+
+.section-title-block--center .eyebrow {
+  justify-content: center;
+}

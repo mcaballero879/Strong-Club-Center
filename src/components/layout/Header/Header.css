@@ -1,0 +1,128 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--header-height);
+  background: rgba(5, 5, 5, 0.96);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.header__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  font-size: 1.45rem;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+}
+
+.header__logo span {
+  color: var(--color-white);
+}
+
+.header__logo b {
+  color: var(--color-primary);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header__link {
+  position: relative;
+  padding: 8px 0;
+  color: var(--color-gray-300);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+
+.header__link:hover,
+.header__link.active {
+  color: var(--color-white);
+}
+
+.header__link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--color-primary);
+}
+
+.header__cta {
+  margin-left: 4px;
+}
+
+.header__toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  padding: 8px;
+}
+
+.header__toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin: 5px 0;
+  background: var(--color-white);
+  transition: var(--transition);
+}
+
+@media (max-width: 850px) {
+  .header {
+    height: 72px;
+  }
+
+  .header__toggle {
+    display: block;
+    z-index: 2;
+  }
+
+  .header__nav {
+    position: fixed;
+    inset: 72px 0 0;
+    padding: 32px 20px;
+    background: var(--color-black);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    transform: translateX(100%);
+    transition: transform var(--transition);
+  }
+
+  .header__nav.is-open {
+    transform: translateX(0);
+  }
+
+  .header__link {
+    padding: 16px;
+    font-size: 1rem;
+  }
+
+  .header__cta {
+    margin: 14px 0 0;
+    text-align: center;
+  }
+}
+
+.header-logo-img {
+    width: 40px; /* Ajusta el tamaño que desees aquí */
+    height: auto;
+    transform: translateY(8px); /* Aumenta este número para bajarla más píxeles */
+}

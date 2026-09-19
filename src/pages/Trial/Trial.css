@@ -1,0 +1,33 @@
+.trial-page {
+  background: var(--color-dark);
+}
+
+.trial-page__grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.trial-page h2 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  line-height: .9;
+  letter-spacing: -.06em;
+}
+
+.trial-page > .container > div > p {
+  max-width: 500px;
+  color: var(--color-gray-500);
+}
+
+.form select {
+  appearance: none;
+}
+
+@media (max-width: 750px) {
+  .trial-page__grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+}

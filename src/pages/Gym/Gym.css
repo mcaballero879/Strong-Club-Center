@@ -1,0 +1,44 @@
+.gym-intro {
+  background: var(--color-gray-100);
+  color: var(--color-black);
+}
+
+.gym-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.gym-intro .section__header {
+  margin-bottom: 0;
+}
+
+.gym-intro .eyebrow {
+  color: var(--color-primary);
+}
+
+.gym-intro__statement {
+  border-left: 3px solid var(--color-primary);
+  padding-left: 30px;
+}
+
+.gym-intro__statement strong {
+  display: block;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1;
+}
+
+.gym-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 800px) {
+  .gym-intro__grid,
+  .gym-features {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

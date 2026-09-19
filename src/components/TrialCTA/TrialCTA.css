@@ -1,0 +1,40 @@
+.trial-cta {
+  padding: 90px 0;
+  background:
+    linear-gradient(105deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.trial-cta__inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.trial-cta h2 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  line-height: .9;
+  letter-spacing: -.06em;
+  text-transform: uppercase;
+}
+
+.trial-cta h2 span {
+  color: var(--color-black);
+}
+
+.trial-cta p {
+  margin: 0 0 24px;
+  max-width: 450px;
+}
+
+.trial-cta .eyebrow {
+  color: var(--color-black);
+}
+
+@media (max-width: 700px) {
+  .trial-cta__inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
