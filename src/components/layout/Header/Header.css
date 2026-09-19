@@ -122,7 +122,7 @@
 }
 
 .header-logo-img {
-    width: 40px; /* Ajusta el tamaño que desees aquí */
+    width: 40px; 
     height: auto;
-    transform: translateY(8px); /* Aumenta este número para bajarla más píxeles */
+    transform: translateY(3px); /* Aumenta este número para bajarla más píxeles */
 }
