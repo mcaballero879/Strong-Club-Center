@@ -23,7 +23,7 @@ function Footer() {
 
         <div>
           <h3>CONTACTO</h3>
-          <span>Buenos Aires, Alsina 1569</span>
+          <span>Buenos Aires, Alsina 1569 CABA</span>
           <span>+54 9 11 2874-3528</span>
           { /*<span>info@stronggym.com.ar</span> */}
         </div>

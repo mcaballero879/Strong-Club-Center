@@ -18,7 +18,7 @@ function Contact() {
         <div className="contact__info">
           <div>
             <small>DIRECCIÓN</small>
-            <strong>Buenos Aires, Argentina</strong>
+            <strong>Buenos Aires, Alsina 1569 CABA </strong>
           </div>
           <div>
             <small>HORARIO</small>
