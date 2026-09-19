@@ -1,10 +1,10 @@
 export const classes = [
   {
     id: 1,
-    slug: "defenza",
-    title: "Defenza Personal",
+    slug: "defensa",
+    title: "Defensa Personal",
     category: "DEFENZA",
-    description: "Entrenamiento orientado a la defenza personal.",
+    description: "Entrenamiento orientado a la defensa personal.",
     image: "https://media.istockphoto.com/id/480183472/es/foto/sin-servicio-de-valet-de-defensa-de-pierna-hit.jpg?s=612x612&w=0&k=20&c=hTbnTZpPNpjEh6r26k11EzWXoZCZttiPyLsobAtbUZc="
   },
   {
